@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 252, 252);
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+}
+.container .heading {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  color: rgb(133, 102, 26);
+  text-align: center;
+}
+.Questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.Question1,
+.Question2,
+.Question3 {
+  background-color: white;
+  height: 50px;
+  width: 600px;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  font-family: sans-serif;
+  color: black;
+  word-spacing: 2px;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+.text1 {
+  background-color: white;
+  width: 600px;
+  padding: 5px;
+  font-family: sans-serif;
+  color: grey;
+  font-size: 12px;
+  border: 1px solid grey;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: -10px;
+  box-shadow: 0 0 10px black;
+}
+@media (max-width: 991.98px) {
+  .Question1,
+  .Question2,
+  .Question3,
+  .text1 {
+    max-width: 300px;
+    width: 100%;
+  }
+  .container {
+    padding-bottom: 10px;
+  }
+}
+.fa-square-plus:hover {
+  transform: rotate(45deg);
+  transition: 0.3s ease-in-out;
+}
+.fa-square-minus:hover {
+  transform: rotate(-45deg);
+  transition: 0.3s ease-in-out;
+}
